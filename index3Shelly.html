@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<title>JavaScript Blackjack Game</title>
+    <style>
+	body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	font-size: 14px;
+	line-height: 20px;
+	background-image: url(http://s20.postimg.org/p1633s97x/bj_table6.jpg);
+	background-repeat: no-repeat;
+    background-position: center;
+	background-size: 100% 100% 100%;;
+	margin: 0px;
+	padding: 150px 0px 0px 0px;
+	text-align: center;
+	}
+
+	table {
+    margin: 0 auto;
+    text-align: center;
+	}
+
+	.buttons { 
+	text-align: center;
+	padding: 10px;
+	margin-top: 0px;
+	}
+	</style>
+
+</head>
+
+<body>
+<h1> BlackJack 21</h1>
+	<!--Player-->
+		<table>
+			<tr>
+				<td>Player</td>
+				<td><img id="pimage1" src = ""></td>
+				<td><img id="pimage2" src = ""></td>
+                <td><img id="pimage3" src = ""></td>
+				<td><img id="pimage4" src = ""></td>
+				<td><img id="pimage5" src = ""></td>
+                <td>Player Total</td>
+				<td><input type="text" id="ptotal"></td>
+			 </tr> 
+	 <!--Dealer-->           
+              <tr>
+  				<td>Dealer</td>
+  				<td><img id="dimage1" src = ""></td>
+  				<td><img id="dimage2" src = ""></td>
+  				<td><img id="dimage3" src = ""></td>
+  				<td><img id="dimage4" src = ""></td>
+  				<td><img id="dimage5" src = ""></td>
+                <td>Dealer Total</td>
+				<td><input type="text" id="dtotal"></td>
+			  </tr>
+		</table>
+ 
+ 	<!--Buttons-->
+     <div class="buttons">
+  			  <button class="button" id="Deal">Deal</button>
+  			  <button class="button" id="Hit">Hit</button>
+  			  <button class="button" id="Stand">Stand</button>
+  			  <button class="button" id="newGame">New Game</button>
+        
+      <script src="blackjackFunctions.js"></script>  
+</body>
+</html>
