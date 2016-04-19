@@ -25,7 +25,7 @@ var max = 51;
 // 
 while (cnt < 52)
 	{
-			var pic = imagesName[cnt] + ".png";
+			var pic = "cards/" + imagesName[cnt] + ".png";
 			images.push(pic);
 			cnt = cnt + 1;
 				
@@ -47,7 +47,7 @@ function createDeck()
 	// 
 	while (cnt < 52)
 		{
-				var pic = imagesName[cnt] + ".png";
+				var pic = "cards/" + imagesName[cnt] + ".png";
 				images.push(pic);
 				cnt = cnt + 1;
 				
@@ -131,7 +131,7 @@ function deal()
 		dHand[1] = deck[num];
 		dValue[1] = deckValue[num];
 		var backCard = [];
-		var backCardName = "backside";
+		var backCardName = "cards/backside";
 		backCardPic = backCardName + ".png";
 		backCard.push(backCardPic);
 		console.log(backCard.push[0]);
